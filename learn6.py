@@ -210,3 +210,48 @@ for username,user_info in users.items():
     location = user_info['location']
     print("\tFull name: " + full_name.title())
     print("\tLocation: " + location.title())
+yan1 = {'first_name' : 'z1', 'last_name' : 'y1', 'age' : '12', 'city' : 'xian'}
+yan2 = {'first_name' : 'z2', 'last_name' : 'y2', 'age' : '13', 'city' : 'xian'}
+yan3 = {'first_name' : 'z3', 'last_name' : 'y3', 'age' : '14', 'city' : 'xian'}
+people = [yan1, yan2, yan3]
+for info in people:
+    name = info['first_name'].title() + " " + info['last_name'].title()
+    print("Name: " + name)
+    print("Age: " + info['age'] )
+    print("City: " + info['city'])
+dog = {'name':'dog1','age':'3'}
+cat = {'name':'cat1','age':'4'}
+bird = {'name':'birds','age':'1'}
+pet = [dog,cat,bird]
+for p in pet:
+    print(p)
+favorite_places = {
+    'yan':['1','2','3'],
+    'li':['4','5','6'],
+    'fei':['7','8','9'],
+    }
+for k,v in favorite_places.items():
+    print(k +":" )
+    for v1 in v:
+        print(v1)
+cities = {
+    'beijing':{
+        'country':'china',
+        'population':'100',
+        'fact':'超级堵'
+        },
+    'guangzhou':{
+        'country':'china',
+        'population':'300',
+        'fact':'超级堵2'
+        },
+    'shanghai':
+        {'country':'china',
+         'population':'200',
+         'fact':'超级堵1'
+         }
+         }
+for k,v in cities.items():
+	print('城市：'+k+ '的信息： ')
+	for k1,v1 in v.items():
+		print(k1 + " : " + v1)
